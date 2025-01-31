@@ -1,0 +1,175 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    background-position: right !important;
+    background-size: cover !important;
+}
+
+main {
+    width: min(90%, 1100px);
+    margin: 20px 0;
+}
+
+.single-cont {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.col-1 {
+    flex: 1;
+    max-width: 300px;   
+    padding-right: 20px;
+    padding-left: 30px;
+}
+
+.col-1 img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.col-2 {
+    flex: 2;
+    padding-left: 30px;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.head h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.head span {
+    font-size: 18px;
+    color: #bbb;
+}
+
+.slang {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.certification {
+    padding: 5px;
+    color: #B4B1B2;
+    border: 1px solid #B4B1B2;
+}
+
+.genres-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.genres-list li {
+    background: #B4B1B2;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 15px 0;
+}
+
+.rate {
+    background: #ffcc00;
+    padding: 10px;
+    border-radius: 50%;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+}
+
+.wish-list {
+    display: flex;
+    gap: 15px;
+    margin: 10px 0;
+}
+
+.wish-list div {
+    padding: 15px 17px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.wish-list div:not(:last-child) {
+    background: #444;
+}
+
+.wish-list div:hover {
+    background: #666;
+}
+
+.tagline-cont {
+    font-style: italic;
+    color: #ffcc00;
+    /* margin: 10px 0; */
+}
+
+.tagline {
+    color: #B4B1B2;
+}
+
+.overview h2 {
+    font-size: 20px;
+    border-bottom: 2px solid #ffcc00;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.people {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.people li {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.people li p:nth-child(1) {
+    font-weight: 600;
+}
+
+.people li p:nth-child(2) {
+    font-weight: 300;
+}
+
+@media (max-width: 768px) {
+    .single-cont {
+        flex-direction: column;
+    }
+    
+    .col-1 {
+        max-width: 100%;
+        text-align: center;
+        padding-right: 0;
+    }
+    
+    .col-2 {
+        padding-left: 0;
+    }
+}

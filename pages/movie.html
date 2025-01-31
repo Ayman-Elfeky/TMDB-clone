@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./imgs/favicon-32x32-543a21832c8931d3494a68881f6afcafc58e96c5d324345377f3197a37b367b5.png" type="image/x-icon">
+    <title></title>
+    <link rel="shortcut icon" href="../assets/imgs/favicon-32x32-543a21832c8931d3494a68881f6afcafc58e96c5d324345377f3197a37b367b5.png" type="image/x-icon">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- movie css -->
+    <link rel="stylesheet" href="../assets/styles/movie.css">
+</head>
+<body>
+    <main>
+        <div class="single-cont">
+            <div class="col-1">
+                <img id="image" src="" alt="">
+            </div>
+            <div class="col-2">
+                <div class="title">
+                    <div class="head"><h2 id="titlee"></h2><span id="year"></span></div>
+                    <div class="slang">
+                        <span class="certification">PG</span>
+                        <span class="release-date"></span>
+                        <span class="origin-country"></span>
+                        <ul class="genres-list"></ul>
+                    </div>
+                </div>
+            
+                <div class="wish-list">
+                    <div class="list"><i class="fas fa-list"></i></div>
+                    <div class="like"><i class="fas fa-heart"></i></div>
+                    <div class="save"><i class="fas fa-bookmark"></i></div>
+                    <div class="play-trailer">&#9658 Play The trailer</div>
+                </div>
+            
+                <div class="tagline-cont">
+                    <p class="tagline"></p>
+                </div>
+            
+                <div class="overview">
+                    <h2>Overview</h2>
+                    <p id="overview"></p>
+                </div>
+            
+                <ul class="people"></ul>
+            </div>
+        </div>
+    </main>
+    <script src="../assets/utils/config.js"></script>
+    <script src="../assets/utils/api.js"></script>
+    <script src="../assets/scripts/movie.js"></script>
+</body>
+</html>

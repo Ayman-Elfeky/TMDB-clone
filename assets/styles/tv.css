@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    height: 100vh;
+}
+
+.con {
+    display: flex;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.details {
+    font-size: 0.9em;
+}
+
+img {
+    margin-right: 50px;
+    position: relative;
+    max-width: 200px;
+    /* height: 80%; */
+    border-radius: 10px;
+}
+
+.genres, .networks {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.network-logo {
+    max-height: 40px;
+}
