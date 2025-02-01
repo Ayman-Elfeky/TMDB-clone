@@ -8,6 +8,7 @@ body {
     /* justify-content: center; */
     background-position: right !important;
     background-size: cover !important;
+    overflow: hidden;
 }
 
 main {
