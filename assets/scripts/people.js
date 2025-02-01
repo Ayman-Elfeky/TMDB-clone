@@ -15,8 +15,17 @@ async function getData() {
 }
 
 getData().then(actor => {
-    document.head.children[2].innerHTML = actor.name;
-    document.head.children[4].href = `${apiImage}${actor.profile_path}`;
+    document.title = actor.name;
+    console.log(document.title)
+    const linkImg = document.getElementsByTagName('link');
+    for(let i = 0; i < linkImg.length; i++) {
+        if(linkImg[i].rel === 'icon') {
+            linkImg[i].href = `${apiImage}${actor.profile_path}`
+        }
+    }
+
+
+    linkImg.href = `${apiImage}${actor.profile_path}`;
 
     image.src = `${apiImage}${actor.profile_path}`;
     actorName.textContent = actor.name;
