@@ -17,7 +17,6 @@ getData().then(tv => {
     document.getElementById('poster').src = `${apiImage}${tv.poster_path}`;
     document.getElementById('overview').textContent = tv.overview;
     
-    // Genres
     const genresContainer = document.getElementById('genres');
     tv.genres.forEach(genre => {
         let span = document.createElement('span');
@@ -25,7 +24,6 @@ getData().then(tv => {
         genresContainer.appendChild(span);
     });
     
-    // Networks
     const networksContainer = document.getElementById('networks');
     tv.networks.forEach(network => {
         let img = document.createElement('img');
@@ -35,7 +33,6 @@ getData().then(tv => {
         networksContainer.appendChild(img);
     });
 
-    // Episode details
     document.getElementById('last-episode').textContent = tv.last_episode_to_air?.overview || "No data available";
     document.getElementById('next-episode').textContent = tv.next_episode_to_air?.overview || "No data available";
 });
